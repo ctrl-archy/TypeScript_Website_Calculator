@@ -1,12 +1,11 @@
-console.log('Here we go again ✨')
-
+"use strict";
+console.log('Here we go again ✨');
 const num_buttons = document.querySelectorAll(".Numbers");
 const eq_buttons = document.querySelectorAll(".Equation");
-const output = document.getElementById("output") as HTMLParagraphElement;
-
+const output = document.getElementById("output");
 num_buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        const value = (button as HTMLButtonElement).value;
+        const value = button.value;
         output.textContent = `Clicked: ${value}`;
     });
 });
