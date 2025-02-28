@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
     <meta charset="UTF-8">
-    <script src="dist/index.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
 <h1 class="Title">This is the TypeScript calculator</h1>
 <p> Use the buttons below </p>
-<div class="flex-container button_space">
-    <button type="button" class = "Numbers">1</button>
-    <button type="button" class = "Numbers">2</button>
-    <button type="button" class = "Numbers">3</button>
-    <button type="button" class = "Numbers">4</button>
-    <button type="button" class = "Numbers">5</button>
-    <button type="button" class = "Numbers">6</button>
-    <button type="button" class = "Numbers">7</button>
-    <button type="button" class = "Numbers">8</button>
-    <button type="button" class = "Numbers">9</button>
-    <button type="button" class = "Numbers">0</button>
+<div class="calculator">
+    <input id = "display" placeholder="Enter your username">
+        <div class="flex-container button_space">
+            <button onclick="addToDisplay('1')" >1</button>
+            <button onclick="addToDisplay('2')" >2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="addToDisplay('+')">+</button>
+            <button onclick="addToDisplay('-')">-</button>
+            <button onclick="addToDisplay('*')">*</button>
+            <button onclick="addToDisplay('/')">/</button>
+            <button id="equals" >=</button>
+            <button onclick="clearDisplay()">C</button>
+        </div>
+    <p>Result: </p>
+    <p id = "result">0</p>
 
-    <button type="button" class = "Equation">+</button>
-    <button type="button" class = "Equation">-</button>
 </div>
-<p>Result: </p>
-<p class = "result">0</p>
+
 </body>
 </html>

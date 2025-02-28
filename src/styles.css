@@ -4,3 +4,7 @@
     flex-wrap: wrap;
     align-content: center;
 }
+
+.button_space{
+    font-size: 1rem;
+}
